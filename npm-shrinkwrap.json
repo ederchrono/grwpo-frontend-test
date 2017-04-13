@@ -1,4 +1,6 @@
 {
+  "name": "grwpo-frontend-trial",
+  "version": "1.0.0",
   "dependencies": {
     "@types/react": {
       "version": "15.0.21",
