@@ -1,25 +1,7 @@
 import * as React from 'react'
 import {Navbar, Nav, NavItem, MenuItem, NavDropdown} from 'react-bootstrap'
 
-interface Props{
-    // title?: string
-}
-
-interface State{
-    // title: string
-}
-
-export default class FiatNav extends React.Component<Props, State>  {
-
-    public static defaultProps: Partial<Props> = {
-        // title: "My App"
-    };
-
-    constructor(props : Props){
-        super(props);
-        // set initial state
-        // this.state= { title: this.props.title };
-    }
+export default class FiatNav extends React.Component<{}, {}>  {
 
     public render() {
         return (
@@ -71,6 +53,7 @@ export default class FiatNav extends React.Component<Props, State>  {
     }
 }
 
+// component specific styles
 const styles = {
     navbar:{
         borderRadius: 0,
@@ -82,27 +65,15 @@ const styles = {
         borderColor:'rgba(0,0,0,0)',
     },
     menuDesktop:{
-        textTransform: 'uppercase',
-        color: '#000000',
-        textAlign: 'center',
         width: '20%',
     },
     menuTablet:{
-        textTransform: 'uppercase',
-        color: '#000000',
-        textAlign: 'center',
         width: '20%',
     },
     menuTabletLg:{
-        textTransform: 'uppercase',
-        color: '#000000',
-        textAlign: 'center',
         width: '40%',
     },
     menuMobile:{
-        textTransform: 'uppercase',
-        color: '#000000',
-        textAlign: 'center',
         width: '100%',
     },
     logo:{
