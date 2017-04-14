@@ -60,9 +60,26 @@ export default class Header extends React.Component<HeaderProps, HeaderState>  {
                     font-weight: 700;
                 }
                 .trapezoid{
-                    -webkit-clip-path: polygon(0 0, 100% 0, 100% 67%, 0% 100%);
-                    clip-path: polygon(0 0, 100% 0, 100% 67%, 0% 100%);
+                    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+                    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
                 }
+                
+                /* FORM */
+                
+                .formTitle{
+                    color: red;
+                    text-align: center;
+                }
+                .formSubtitle{
+                    text-align:center;
+                    text-transform:uppercase;
+                }
+
+                textarea.form-control{
+                    height: 200px;
+                    resize: none;
+                }
+
                 `}</style>
 
             </Head>

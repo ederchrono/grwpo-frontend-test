@@ -16,5 +16,12 @@ export default () =>
     <FiatNav />
     <FiatDiagonalBG color="#4957D1"/>
     <FiatTitle />
-    <FiatForm />
+
+    <div className="hidden-xs">
+      <FiatForm xs={false}/> 
+    </div>
+    <div className="visible-xs-block">
+      <FiatForm xs={true}/>
+    </div>
+    
   </div>
