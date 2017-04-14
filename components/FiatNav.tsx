@@ -6,7 +6,7 @@ export default class FiatNav extends React.Component<{}, {}>  {
     public render() {
         return (
             <Navbar style={styles.navbar} collapseOnSelect>
-                <div>
+                <div style={ {maxWidth:800, margin: '0 auto'} } >
                     <Navbar.Header>
                     <Navbar.Brand>
                         <a href="/">
@@ -20,7 +20,7 @@ export default class FiatNav extends React.Component<{}, {}>  {
                         <div className="visible-md-block visible-lg-block">    
                             <Nav style={styles.nav}>
                                 <NavItem style={styles.menuDesktop} eventKey={1} href="#">Modelos</NavItem>
-                                <NavItem style={styles.menuDesktop} eventKey={2} href="#">Prueba de manejo</NavItem>
+                                <NavItem style={styles.menuDesktopLg} eventKey={2} href="#">Prueba de manejo</NavItem>
                                 <NavItem style={styles.menuDesktop} eventKey={3} href="#">Cotizar</NavItem>
                                 <NavItem style={styles.menuDesktop} eventKey={4} href="#">Promociones</NavItem>
                                 <NavItem style={styles.menuDesktop} eventKey={5} href="#">Distribuidores</NavItem>
@@ -65,13 +65,16 @@ const styles = {
         borderColor:'rgba(0,0,0,0)',
     },
     menuDesktop:{
-        width: '20%',
+        width: '17.5%',
+    },
+    menuDesktopLg:{
+        width: '25%',
     },
     menuTablet:{
         width: '20%',
     },
     menuTabletLg:{
-        width: '40%',
+        width: '30%',
     },
     menuMobile:{
         width: '100%',

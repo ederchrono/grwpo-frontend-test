@@ -20,6 +20,6 @@ const styles = {
         height:1000,
         margin: '-30px auto 0',
         width:700,
-
+        
     },
 }
