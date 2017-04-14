@@ -35,8 +35,9 @@ export default class FiatForm extends React.Component<{xs:boolean}, {}>  {
                 <form>
                     <Row>
                         <Col xs={12} sm={6}>
-                            <FormGroup controlId="formControlsSelect">
+                            <FormGroup>
                             <ControlLabel>Modelo</ControlLabel>
+                            <img className="customCaret" src="/static/down-arrow.svg" alt=""/>
                             <FormControl componentClass="select" placeholder="select">
                                 <option value="select">Selecciona</option>
                                 <option value="other">...</option>
@@ -44,8 +45,9 @@ export default class FiatForm extends React.Component<{xs:boolean}, {}>  {
                             </FormGroup>
                         </Col>
                         <Col xs={12} sm={6}>
-                            <FormGroup controlId="formControlsSelect">
+                            <FormGroup>
                             <ControlLabel>Versión</ControlLabel>
+                            <img className="customCaret" src="/static/down-arrow.svg" alt=""/>                            
                             <FormControl componentClass="select" placeholder="select">
                                 <option value="select">Selecciona</option>
                                 <option value="other">...</option>
@@ -53,8 +55,9 @@ export default class FiatForm extends React.Component<{xs:boolean}, {}>  {
                             </FormGroup>
                         </Col>
                         <Col xs={12} sm={6}>
-                            <FormGroup controlId="formControlsSelect">
+                            <FormGroup>
                             <ControlLabel>Estado</ControlLabel>
+                            <img className="customCaret" src="/static/down-arrow.svg" alt=""/>                            
                             <FormControl componentClass="select" placeholder="select">
                                 <option value="select">Selecciona</option>
                                 <option value="other">...</option>
@@ -62,8 +65,9 @@ export default class FiatForm extends React.Component<{xs:boolean}, {}>  {
                             </FormGroup>
                         </Col>
                         <Col xs={12} sm={6}>
-                            <FormGroup controlId="formControlsSelect">
+                            <FormGroup>
                             <ControlLabel>Distribuidor</ControlLabel>
+                            <img className="customCaret" src="/static/down-arrow.svg" alt=""/>                            
                             <FormControl componentClass="select" placeholder="select">
                                 <option value="select">Selecciona</option>
                                 <option value="other">...</option>
@@ -167,6 +171,7 @@ export default class FiatForm extends React.Component<{xs:boolean}, {}>  {
                         <Col xs={12} sm={6} md={4}>
                             <FormGroup controlId="formControlsSelect">
                             <ControlLabel>Plazo</ControlLabel>
+                            <img className="customCaret" src="/static/down-arrow.svg" alt=""/>                            
                             <FormControl componentClass="select" placeholder="select">
                                 <option value="select">72 meses</option>
                                 <option value="other">...</option>
@@ -191,7 +196,7 @@ export default class FiatForm extends React.Component<{xs:boolean}, {}>  {
                             He leído y acepto el <a href="#">aviso de privacidad</a>
                         </Checkbox>
 
-                        <Checkbox checked>
+                        <Checkbox>
                             No deseo recibir promociones
                         </Checkbox>
 

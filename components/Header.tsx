@@ -75,10 +75,36 @@ export default class Header extends React.Component<HeaderProps, HeaderState>  {
                     text-transform:uppercase;
                 }
 
+                .form-control{
+                    border-color:red;
+                    border-radius: 0;
+                    text-transform: uppercase;
+                    font-size:11px;
+                }
+                .form-control:focus{
+                    border-color:red;
+                    box-shadow: none;
+                }
+                .customCaret{
+                    width:10px;
+                    height:10px;
+                    position: absolute;
+                    right: 25px;
+                    bottom: 25px;
+                    pointer-events:none;
+                }
+                label{
+                    color: rgba(0,0,0,.5);
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    padding-left: 5px;
+                }
+
                 textarea.form-control{
                     height: 200px;
                     resize: none;
                 }
+                
 
                 `}</style>
 
