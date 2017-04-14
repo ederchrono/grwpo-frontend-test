@@ -62,7 +62,7 @@ const styles = {
         display: 'inline-block',
         padding: '0 15px',
         backgroundColor: '#4957D1',
-        zIndex: '2',
+        zIndex: 2,
         marginLeft: '50%',
         transform: 'translateX(-50%)',
     },
@@ -71,7 +71,7 @@ const styles = {
         display: 'inline-block',
         padding: '0 15px',
         backgroundColor: '#4957D1',
-        zIndex: '2',
+        zIndex: 2,
     },
     titleSmall:{
         textTransform: 'uppercase',

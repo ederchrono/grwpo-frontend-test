@@ -46,7 +46,7 @@ const styles={
         display: 'inline-block',
         padding: '0 15px',
         backgroundColor: 'white',
-        zIndex: '2',
+        zIndex: 2,
         marginLeft: '50%',
         transform: 'translateX(-50%)',
     },

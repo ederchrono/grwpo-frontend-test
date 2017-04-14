@@ -10,7 +10,7 @@ export default class FiatDiagonalBG extends React.Component<{color:string}, {}> 
         this.styleBG={
             width:'100%',
             position: 'absolute',
-            height: '800',
+            height: 800,
             top: 0,
             backgroundColor: props.color,
             zIndex:-1,
