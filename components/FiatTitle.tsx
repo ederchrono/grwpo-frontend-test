@@ -8,10 +8,18 @@ export default class FiatTitle extends React.Component<{}, {}>  {
                 <h3 style={styles.titleSmall}>
                     Cotizador
                 </h3>
-                <div>
-                    <h2 style={styles.titleMedium} className='subtitleFont'>
-                        Citadino, aventurero, deportivo
-                    </h2>
+                <div style={styles.titleMediumContainer}>
+                    <div className="hidden-xs" style={styles.line}></div>
+                    <div className="hidden-xs" style={styles.titleMediumCenter}>
+                        <h2 style={styles.titleMedium} className='subtitleFont'>
+                            Citadino, aventurero, deportivo
+                        </h2>
+                    </div>
+                    <div className="visible-xs-block" style={styles.titleMediumCenterMobile}>
+                        <h2 style={styles.titleMedium} className='subtitleFont'>
+                            Citadino, aventurero, deportivo
+                        </h2>
+                    </div>
                 </div>
                 <h1 style={styles.titleBig} className='titleFont hidden-xs' >
                     Elige el tuyo
@@ -35,6 +43,36 @@ const styles = {
         marginTop: 30,
         zIndex:2
     },
+    line:{
+        position:'relative',
+        transform:"translateY(8px)",
+        width: '65%',
+        marginLeft: '17.5%',
+        height:1,
+        backgroundColor:'black',
+        zIndex:1,
+    },
+    titleMediumContainer:{
+        maxWidth: '100%',
+        width: 640,
+        margin: '0 auto',
+    },
+    titleMediumCenter:{
+        position: 'relative',
+        display: 'inline-block',
+        padding: '0 15px',
+        backgroundColor: '#4957D1',
+        zIndex: '2',
+        marginLeft: '50%',
+        transform: 'translateX(-50%)',
+    },
+    titleMediumCenterMobile:{
+        position: 'relative',
+        display: 'inline-block',
+        padding: '0 15px',
+        backgroundColor: '#4957D1',
+        zIndex: '2',
+    },
     titleSmall:{
         textTransform: 'uppercase',
         color: '#FFFFFF',
@@ -46,14 +84,18 @@ const styles = {
         color: '#000000',
         fontSize: 12,
         letterSpacing: 2,
+        marginBottom: 0,
+        marginTop: 0,
     },
     titleBig:{
         color: '#FFFFFF',
-        fontSize: 70,        
+        fontSize: 70,
+        marginTop:0,
     },
     titleBigMobile:{
         color: '#FFFFFF',
-        fontSize: 50,        
+        fontSize: 50,
+        marginTop:0,
     },
     car:{
         maxWidth: '85%',

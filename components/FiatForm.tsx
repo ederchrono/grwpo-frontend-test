@@ -1,6 +1,7 @@
 import * as React from 'react'
 import {FormGroup, FormControl, ControlLabel, 
     HelpBlock, Checkbox, Button, Row, Col} from 'react-bootstrap'
+import FormTitle from './FormTitle'
 
 function FieldGroup({ id, label, ...props }) {
   return (
@@ -76,11 +77,7 @@ export default class FiatForm extends React.Component<{xs:boolean}, {}>  {
                         </Col>
                     </Row>
 
-
-                    <div>
-                        <h2 className="formTitle titleFont" >Datos personales</h2>
-                        <p className="formSubtitle" >Escribe tus datos personales</p>
-                    </div>
+                    <FormTitle title="Datos personales" subtitle="Escribe tus datos personales"/>
 
                     <Row>
                         <Col xs={12} sm={4}>
@@ -145,10 +142,8 @@ export default class FiatForm extends React.Component<{xs:boolean}, {}>  {
                     </Row>
 
                     
-                    <div>
-                        <h2 className="formTitle titleFont" >Forma de pago</h2>
-                        <p className="formSubtitle">Personaliza tu cotización</p>
-                    </div>
+                    <FormTitle title="Forma de pago" subtitle="Personaliza tu cotización"/>
+                    
 
                     <Row>
                         <Col xs={6} md={4} mdOffset={2}>
@@ -180,11 +175,8 @@ export default class FiatForm extends React.Component<{xs:boolean}, {}>  {
                         </Col>
                     </Row>
 
-                    <div>
-                        <h2 className="formTitle titleFont" >Comentarios</h2>
-                        <p className="formSubtitle">Nos importan tus comentarios</p>
-                    </div>
-
+                    <FormTitle title="Comentarios" subtitle="Nos importan tus comentarios"/>
+                    
                     <FormGroup controlId="formControlsTextarea">
                     <ControlLabel>¿Dudas? ¿Comentarios?</ControlLabel>
                     <FormControl componentClass="textarea" placeholder="Escríbenos" />
@@ -200,11 +192,12 @@ export default class FiatForm extends React.Component<{xs:boolean}, {}>  {
                             No deseo recibir promociones
                         </Checkbox>
 
-                        <Button style={ {right:0, position:'absolute', bottom:0} } >Enviar</Button>
+                        <Button className="hidden-xs" style={ {right:0, position:'absolute', bottom:0} } >Enviar</Button>
                         
                     </div>
 
-
+                    <Button className="visible-xs-block" style={ {margin: '0 auto'} } >Enviar</Button>
+                    
 
                 </form>
             </div>

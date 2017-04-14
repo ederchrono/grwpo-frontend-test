@@ -73,6 +73,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState>  {
                 .formSubtitle{
                     text-align:center;
                     text-transform:uppercase;
+                    font-size:10px;
                 }
 
                 .form-control{
@@ -93,6 +94,16 @@ export default class Header extends React.Component<HeaderProps, HeaderState>  {
                     bottom: 25px;
                     pointer-events:none;
                 }
+                select{
+                    -webkit-appearance: none; 
+                    -moz-appearance: none; 
+                    -ms-appearance: none; 
+                    -o-appearance: none; 
+                    appearance: none
+                }
+                select::-ms-expand {
+                    display: none;
+                }
                 label{
                     color: rgba(0,0,0,.5);
                     text-transform: uppercase;
@@ -103,8 +114,30 @@ export default class Header extends React.Component<HeaderProps, HeaderState>  {
                 textarea.form-control{
                     height: 200px;
                     resize: none;
+                    margin-bottom: 50px;
                 }
                 
+                button.btn.btn-default{
+                    border-radius: 0;
+                    border-color:red;
+                    text-transform: uppercase;
+                    letter-spacing: 5px; 
+                    font-size: 13px;
+                    font-weight: 900;
+                    padding: 10px 40px;                   
+                }
+
+                
+                .checkbox label{
+                    text-transform: none;
+                    color: black;
+                }
+
+                .checkbox label a{
+                    text-decoration: underline;
+                    color: black;
+                }
+
 
                 `}</style>
 
