@@ -14,7 +14,6 @@ export default class FiatDiagonalBG extends React.Component<{color:string}, {}> 
             top: 0,
             backgroundColor: props.color,
             zIndex:-1,
-            //minWidth: 2000
         }
     }
 
