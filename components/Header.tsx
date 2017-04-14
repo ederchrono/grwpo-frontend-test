@@ -138,6 +138,56 @@ export default class Header extends React.Component<HeaderProps, HeaderState>  {
                     color: black;
                 }
 
+                .btnSelect{
+                    border-color:red;
+                    border-width: 1px;
+                    border-style: solid;
+                    background-color: white;
+                    color: black;
+                    padding: 10px;
+                    text-align: center;
+                    width:33%;
+                    display: inline-block;
+                    cursor: pointer;
+                    margin-top: 0px;
+                    margin-bottom: 30px;
+                    transition: background-color 0.3s, color 0.2s;
+                    min-height:39px;
+                }
+                .btnSelect span {
+                    margin: 0 20px 5px;
+                }
+                @media (max-width: 506px) {
+                    .btnSelect{
+                        height:54px;
+                    }
+                    .btnSelect.text{
+                        line-height: 3;
+                    }
+                    .btnSelect span {
+                        margin: 0 40px 5px;
+                    }
+                }
+                @media (max-width: 450px) {
+                    .btnSelect span {
+                        margin: 0 20px 5px;
+                    }
+                }
+                .btnSelect50{
+                    width: 50%;
+                }
+                .btnSelectLeft{
+                    border-right: none;
+                }
+                .btnSelectRight{
+                    border-left: none;
+                }
+                .btnSelectActive{
+                    background-color: red;
+                    color: white;
+                }
+                
+
 
                 `}</style>
 
